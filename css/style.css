@@ -1,0 +1,723 @@
+@font-face {
+    font-family: gentonaLight;
+    src: url(../fonts/Gentona/GentonaLight.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: gentonaBook;
+    src: url(../fonts/Gentona/GentonaBook.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: gentonaMedium;
+    src: url(../fonts/Gentona/GentonaMedium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: gentonaSemiBold;
+    src: url(../fonts/Gentona/GentonaSemiBold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: gentonaBold;
+    src: url(../fonts/Raleway-Black.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: gentonaExtraBold;
+    src: url(../fonts/Gentona/GentonaExtraBold.otf);
+    font-weight: 800;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.yellow {
+    color: #ffb602;
+}
+
+.grey {
+    color: #3c3c3b;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+
+.ffLight {
+    font-family: gentonaLight;
+}
+
+.ffBook {
+    font-family: gentonaBook;
+}
+
+.ffMedium {
+    font-family: gentonaMedium;
+}
+
+.ffSemiBold {
+    font-family: gentonaSemiBold;
+}
+
+.ffExtraBold {
+    font-family: gentonaExtraBold;
+}
+
+
+.primeraVista {
+    position: relative;
+    background-color: #f5f7f7;
+    background-image: url('../img/bannerHome.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 100vh;
+}
+
+.portadaMobile {
+    display: none;
+}
+
+.arrowDown {
+    display: none;
+}
+
+.containerForm {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 2.5vw;
+    right: 2.5vw;
+    width: 41.66vw;
+    padding: 1.5vw 2vw;
+    z-index: 9;
+}
+
+.containerForm>h2 {
+    font-size: 2.60vw;
+}
+
+.containerForm>p {
+    margin: 1vw 0 2vw;
+    font-size: 1.30vw;
+}
+
+.form form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: gentonaLight !important;
+    color: #3c3c3b !important;
+}
+
+.form input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 48%;
+    margin-bottom: 1vw;
+    border: 0;
+    box-shadow: 0px 0px 10px rgba(236, 239, 249);
+    padding: 0.5vw 1vw;
+    font-size: 1.04vw;
+    color: #3c3c3b !important;
+    font-family: gentonaLight !important;
+}
+
+.form input::placeholder {
+    color: #3c3c3b;
+    font-size: 1.04vw;
+    font-family: gentonaLight !important;
+}
+
+.form select {
+    width: 48%;
+    margin-bottom: 1vw;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(236, 239, 249);
+    padding: 0.5vw 1vw;
+    font-size: 1.04vw;
+    color: #3c3c3b !important;
+    font-family: gentonaLight !important;
+}
+
+.form select option {
+    padding: 0.5vw 1vw;
+    font-size: 1.04vw;
+    color: #3c3c3b !important;
+    font-family: gentonaLight !important;
+}
+
+.form textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8vw;
+    border: 0;
+    box-shadow: 0px 0px 10px rgba(236, 239, 249);
+    padding: 1vw;
+    font-size: 1.04vw;
+    color: #3c3c3b !important;
+    font-family: gentonaLight !important;
+}
+
+.form textarea::placeholder {
+    color: #3c3c3b;
+    font-size: 1.04vw;
+    font-family: gentonaLight !important;
+}
+
+
+.form .aceptoPDP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5vw 0;
+}
+
+.form .aceptoPDP input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
+    width: 1vw;
+    height: 1vw;
+    margin: 0 1vw 0 0;
+}
+
+.form .aceptoPDP p {
+    font-size: 1.04vw
+}
+
+.form .aceptoPDP a {
+    text-decoration: underline;
+}
+
+.form input[type="submit"] {
+    background-color: #ffb602;
+    font-family: gentonaSemiBold !important;
+    font-size: 1.04vw;
+    width: 6.25vw;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+.form .contornoEnviar {
+    border: 2px solid #3c3c3b;
+    width: 6.25vw;
+    height: 2.3vw;
+    position: absolute;
+    left: 17.4vw;
+    bottom: 1.2vw;
+    z-index: 1;
+}
+
+
+/* ************************* css segunda Vista ********************  */
+
+
+
+.segundaVista {
+    background-image: url('../img/fondoMayor.png');
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    background-position: 90vw 9vw;
+    background-color: #f5f7f7;
+    padding: 2.5vw 0;
+}
+
+.matriculate {
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #fff;
+    padding: 2vw 1vw;
+    width: 59vw;
+    margin: auto;
+}
+
+.matriculate p {
+    font-size: 2.34vw;
+}
+
+.programas {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 86vw;
+    margin: 7vw auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vw 1vw;
+}
+
+.programasMobile {
+    display: none;
+}
+
+.programa {
+    width: 20vw;
+    padding: 0 2vw;
+    position: relative;
+    border-right: 2px solid #cfd0d4;
+    height: auto;
+    min-height: 19vw;
+}
+
+.programa:nth-last-child(1) {
+    border-right: 0;
+}
+
+.programa img {
+    width: 5.15vw;
+    margin: -4.5vw 0 1vw;
+}
+
+.programa p {
+    font-size: 1.81vw;
+    height: auto;
+    min-height: 15.3vw;
+}
+
+
+/* ************************* css tercera Vista ********************  */
+.terceraVista {
+    background-image: url('../img/fondoMayor.png');
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    background-position: -15vw 0vw;
+    padding: 5vw 0;
+    position: relative;
+}
+
+.terceraVista>p {
+    font-size: 2.5vw;
+    background-color: #ffb602;
+    width: fit-content;
+    margin: 1vw auto;
+    padding: 0 1vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.arrowLeft {
+    position: absolute;
+    right: 20vw;
+    top: 8.3vw;
+    width: 2.21vw;
+}
+
+.arrowRight {
+    position: absolute;
+    left: 20vw;
+    top: 8.3vw;
+    width: 2.21vw;
+}
+
+.niveles {
+    width: 60vw;
+    margin: 5vw 0 0;
+}
+
+/* ************************* css cuarta Vista ********************  */
+
+
+.cuartaVista {
+    padding: 5vw 0 7vw;
+    position: relative;
+    background-color: #f5f7f7;
+    background-image: url(../img/footer.png);
+    background-size: 100%;
+    background-position: center 31.4vw;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.cta {
+    background-color: #ffb602;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    padding: 2.5vw 5vw;
+    position: relative;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    right: -17vw;
+    width: 15vw;
+    height: 15vw;
+    background-image: url(../img/fondoMayor.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.cta p {
+    font-size: 2.60vw;
+    border-right: 3px solid #dd9300;
+    margin-right: 5vw;
+}
+
+.btnAqui {
+    background-color: #fff;
+    font-size: 2.60vw;
+    width: 30vw;
+    height: 5vw;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contornoAqui {
+    border: 2px solid #3c3c3b;
+    width: 19.87vw;
+    height: 5vw;
+    position: absolute;
+    bottom: 2.5vw;
+    right: 5vw;
+    z-index: 1;
+}
+
+.flechaBtn {
+    position: absolute;
+    right: 3.6vw;
+    bottom: 1.6vw;
+    width: 1.98vw;
+    z-index: 99;
+}
+
+.cuartaVista>p {
+    font-size: 1.82vw;
+    margin-top: 1.2vw;
+    margin-bottom: 2.5vw;
+}
+
+.contactanosBox {
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #fff;
+    padding: 1vw 2vw;
+    width: 37vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactanosBox p {
+    font-size: 2.60vw;
+}
+
+.contactanosBox img {
+    width: 2.60vw;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    margin: 1.5vw auto 2vw;
+
+}
+
+.socialMedia img {
+    width: 5vw;
+}
+
+
+@media (max-width: 768px) {
+    .primeraVista {
+        background-image: unset;
+        padding: 0 0 10vw;
+        height: auto;
+        text-align: center;
+    }
+
+    .portadaMobile {
+        display: block;
+        width: 100%;
+    }
+
+    .arrowDown {
+        display: block;
+        margin: 10vw auto;
+        width: 20vw;
+    }
+
+    .containerForm {
+        position: relative;
+        width: 90vw;
+        margin: auto;
+        right: 0;
+        top: 0;
+        padding: 5vw;
+    }
+
+    .containerForm h2 {
+        font-size: 7.73vw;
+    }
+
+    .containerForm p {
+        font-size: 4.8vw;
+    }
+
+    .form form {
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 100%;
+        font-size: 4.8vw;
+        margin-bottom: 5vw;
+        padding: 2.5vw;
+    }
+
+    .form input::placeholder {
+        font-size: 4.8vw;
+    }
+
+    .form select {
+        width: 100%;
+        font-size: 4.8vw;
+        margin-bottom: 5vw;
+        padding: 2.5vw;
+    }
+
+    .form select option {
+        font-size: 4.8vw;
+    }
+
+    .form textarea {
+        width: 100%;
+        font-size: 4.8vw;
+        height: 20vw;
+        padding: 2.5vw;
+    }
+
+    .form textarea::placeholder {
+        font-size: 4.8vw;
+    }
+
+    .form .aceptoPDP {
+        margin: 5vw 0;
+    }
+
+    .form .aceptoPDP input[type="checkbox"] {
+        width: 5vw;
+        height: 5vw;
+        margin: 0 2vw 0 0;
+    }
+
+    .form .aceptoPDP p {
+        font-size: 3.76vw;
+    }
+
+    .form input[type="submit"] {
+        width: 30vw;
+        font-size: 4.8vw;
+    }
+
+    .form .contornoEnviar {
+        width: 30vw;
+        height: 11.3vw;
+        left: 28.8vw;
+        bottom: 3.8vw;
+    }
+
+    .segundaVista {
+        background-image: unset;
+    }
+
+    .matriculate {
+        width: 85vw;
+        border: 5px solid #fff;
+        margin: 0 auto 20vw;
+    }
+
+    .matriculate p {
+        font-size: 4.8vw;
+    }
+
+    .programasDesktop {
+        display: none;
+    }
+
+    .programasMobile {
+        display: flex;
+    }
+
+    .programas {
+        width: 90vw;
+        margin: 10vw auto;
+
+    }
+
+    .programa {
+        padding: 20vw 2vw 0;
+        width: 45vw;
+        min-height: 71vw;
+        position: relative;
+    }
+
+    .p3,
+    .p4 {
+        padding: 26vw 2vw 0;
+    }
+
+    .programa p {
+        font-size: 4.8vw;
+    }
+
+    .programa img {
+        position: absolute;
+        width: 25vw;
+        margin: 0;
+        top: -10vw;
+        left: 9vw;
+    }
+
+    .p2 img {
+        top: -18vw
+    }
+
+    .terceraVista {
+        padding: 10vw 0;
+        background-image: unset;
+    }
+
+    .terceraVista>p {
+        font-size: 4.26vw;
+    }
+
+    .arrowRight {
+        left: 6vw;
+        top: 14.3vw;
+        width: 5vw;
+    }
+
+    .arrowLeft {
+        right: 6vw;
+        top: 14.3vw;
+        width: 5vw;
+    }
+
+    .niveles {
+        width: 90vw;
+        margin: 10vw auto 0;
+    }
+
+    .cuartaVista {
+        padding: 10vw 0 7vw;
+        background-position: center 102.5vw;
+    }
+
+    .cta {
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    .cta::before {
+        display: none;
+    }
+
+    .cta p {
+        border: 0;
+        font-size: 4.8vw;
+        margin: 0 0 5vw;
+    }
+
+    .btnAqui {
+        font-size: 4.8vw;
+        width: 40vw;
+        height: 10vw;
+    }
+
+    .contornoAqui {
+        width: 40vw;
+        height: 10vw;
+        bottom: 3.3vw;
+        right: 21.6vw;
+        border: 4px solid #3c3c3b;
+    }
+
+    .flechaBtn {
+        right: 17.8vw;
+        bottom: 1.1vw;
+        width: 5.5vw;
+    }
+
+    .cuartaVista>p {
+        font-size: 4.26vw;
+        margin: 5vw auto;
+        width: 80vw;
+    }
+
+    .contactanosBox {
+        width: 80vw;
+    }
+
+    .contactanosBox p {
+        font-size: 4.8vw;
+    }
+
+    .contactanosBox img {
+        width: 10vw;
+    }
+
+    .socialMedia {
+        width: 70vw;
+        margin: 5vw auto;
+    }
+
+    .socialMedia img {
+        width: 12vw;
+    }
+}
